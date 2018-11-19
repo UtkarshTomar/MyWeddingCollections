@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.onlineshop.backendproject.ProductTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 1, Skipped: 5, Time elapsed: 1.648 s <<< FAILURE! - in com.onlineshop.backendproject.ProductTest
+addProduct(com.onlineshop.backendproject.ProductTest)  Time elapsed: 0.457 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: 
+could not execute statement; SQL [n/a]; constraint ["FK91H9H6MQDQWBRBDO91XC7B30C: PUBLIC.PRO_TAB FOREIGN KEY(CATEGORYID) REFERENCES PUBLIC.CAT_TAB(CATEGORYID) (1)"; SQL statement:
+insert into Pro_tab (categoryid, imgName, price, productdescription, productname, quantity, status, supplierid, productid) values (?, ?, ?, ?, ?, ?, ?, ?, ?) [23506-196]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.onlineshop.backendproject.ProductTest.addProduct(ProductTest.java:38)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.onlineshop.backendproject.ProductTest.addProduct(ProductTest.java:38)
+Caused by: org.h2.jdbc.JdbcSQLException: 
+Referential integrity constraint violation: "FK91H9H6MQDQWBRBDO91XC7B30C: PUBLIC.PRO_TAB FOREIGN KEY(CATEGORYID) REFERENCES PUBLIC.CAT_TAB(CATEGORYID) (1)"; SQL statement:
+insert into Pro_tab (categoryid, imgName, price, productdescription, productname, quantity, status, supplierid, productid) values (?, ?, ?, ?, ?, ?, ?, ?, ?) [23506-196]
+	at com.onlineshop.backendproject.ProductTest.addProduct(ProductTest.java:38)
+

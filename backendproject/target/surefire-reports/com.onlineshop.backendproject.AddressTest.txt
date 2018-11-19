@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.onlineshop.backendproject.AddressTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.349 s <<< FAILURE! - in com.onlineshop.backendproject.AddressTest
+com.onlineshop.backendproject.AddressTest  Time elapsed: 9.349 s  <<< ERROR!
+org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'AddressDao' available
+	at com.onlineshop.backendproject.AddressTest.init(AddressTest.java:22)
+
