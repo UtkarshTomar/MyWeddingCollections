@@ -13,7 +13,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name="Addr_Tab")
 public class Address {
-
+	
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int addressid;
@@ -97,4 +98,3 @@ public class Address {
 	
 	
 }
-

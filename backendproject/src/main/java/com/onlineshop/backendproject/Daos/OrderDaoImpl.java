@@ -11,16 +11,17 @@ import com.onlineshop.backendproject.Order;
 @Repository("orderDAO")
 @Transactional
 public class OrderDaoImpl implements OrderDao {
-	   @Autowired
-	    private SessionFactory sessionFactory;
-	     
-	    public Session getSession(){
-	        return sessionFactory.getCurrentSession();
-	    }
-	 
-	    @Override
-	    public int makeOrder(Order order) {
-	        return (int) getSession().save(order);
-	         
-	    }
-}
+
+		@Autowired
+		private SessionFactory sessionFactory;
+		
+		public Session getSession(){
+			return sessionFactory.getCurrentSession();
+		}
+
+		@Override
+		public int makeOrder(Order order) {
+			return (int) getSession().save(order);
+			
+		}
+	}

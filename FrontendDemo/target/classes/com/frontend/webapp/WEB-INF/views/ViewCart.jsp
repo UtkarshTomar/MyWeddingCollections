@@ -1,9 +1,15 @@
-<jsp:include page="./shared/header.jsp"></jsp:include>
+ <jsp:include page="./shared/header.jsp"></jsp:include>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
 <spring:url var="images" value="/resources/images"/>
 
+
+<style>	
+	.glyphicon{
+	font-size:50px;
+	}
+</style>
  <c:set var="contextRoot" value="${pageContext.request.contextPath}"/>
 <div class="container">
 
@@ -38,10 +44,10 @@
   			</td>
   			<td><img src="${images}/${itemObj.product.imgName}" style="height:200px;width:200px"/></td>
   			<td>
-  				<a href="${contextRoot}/addToCart/deleteItem/${itemObj.itemId}">Remove</a>
+  				<a href="${contextRoot}/addToCart/deleteItem/${itemObj.itemId}"><span class="glyphicon glyphicon-remove-sign"></span></a>
   			</td>	
-  			<td><a href="${contextRoot}/addToCart/increaseQuantity/${itemObj.itemId}">+</a></td>
-  			<td><a href="${contextRoot}/addToCart/decreaseQuantity/${itemObj.itemId}">-</a></td>
+  			<td><a href="${contextRoot}/addToCart/increaseQuantity/${itemObj.itemId}"><span class="glyphicon glyphicon-plus-sign bt-lg"></span></a></td>
+  			<td><a href="${contextRoot}/addToCart/decreaseQuantity/${itemObj.itemId}"><span class="glyphicon glyphicon-minus-sign bt-lg"></span></a></td>
   			
   		</tr>
   		

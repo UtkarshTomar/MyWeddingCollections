@@ -20,7 +20,7 @@
 	<h2>Address Form</h2>
 	<br/>
 	
-	<form:form action="${contextRoot }/login" modelAttribute="userobj"/>
+	<form:form action="${contextRoot}/addToCart/addAddress" modelAttribute="addressObj" method="POST">
 	<div class="form-group">
     <label for="houseNumber">House Number</label>
     <form:input type="text" class="form-control" id="houseNumber" path="houseNumber"/>
@@ -32,7 +32,7 @@
  	</div>
  	
  	<div class="form-group">
-    <label for="city">Locality :</label>
+    <label for="city ">City :</label>
     <form:input type="text" class="form-control" id="city" path="city"/>
  	</div>
  	
@@ -42,11 +42,18 @@
  	</div>
  	
  	<div class="form-group">
-    <label for="pinCode">Pincode :</label>
-    <form:input type="text" class="form-control" id="pincode" path="pincode"/>
+    <label for="pincode">Pincode :</label>
+    <form:input type="text" class="form-control" id="pincode" path="pinCode"/>
  	</div>
+ 	
+ 	
+ 	<div class="form-group">
+    
+    <input type="submit" class="form-control btn btn-primary" value="Add"/>
+		</div>
+ 	</form:form>
 
-<jsp:include page="./shared/header.jsp"/>
+<jsp:include page="./shared/Footer.jsp"/>
 </div>
 </body>
 </html>

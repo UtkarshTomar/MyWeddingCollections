@@ -22,7 +22,7 @@
 <body>
 
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid" style="background-color:#000176">
+  <div class="container-fluid" style="background-color:#7D3C98">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Wedding Collections</a>
     </div>
@@ -37,7 +37,7 @@
         </ul>
     </li>
       <li><a href="${contextRoot}/aboutUs">About Us</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a href="${contextRoot}/ContactUs">Contact Us</a></li>
       
        <sec:authorize access="hasAuthority('ADMIN')" > 
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin Options<span class="caret"></span></a>

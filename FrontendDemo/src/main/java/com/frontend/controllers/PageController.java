@@ -64,6 +64,10 @@ public class PageController {
 		 return "AboutUs";
 	 }
 	 
+	 @RequestMapping(value="/ContactUs",method=RequestMethod.GET)
+	 public String toString1(){
+		 return "ContactUs";
+	 }
 	@RequestMapping(value="/admin/getProductPage",method=RequestMethod.GET)
 	public String getProductOptionsPage(){
 		return "ProductOptions";

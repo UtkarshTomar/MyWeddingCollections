@@ -8,7 +8,7 @@
 </head>
 <body>
 <jsp:include page="./shared/header.jsp"/>
-<pre><strong><div>WHO WE ARE</div>
+<pre><strong><div>WHO WE ARE</strong></div>
 
 The journey of Wedding Collections began in the year 2012 with the opening of our first wholesale and retail outlet in Delhi, India.
  After the success of this store,Wedding Collections launched its online store in 2018, never looking back since then.
@@ -18,7 +18,7 @@ The journey of Wedding Collections began in the year 2012 with the opening of ou
   
   
   
- <div>  WHAT WE STAND FOR</div>
+ <div><strong>  WHAT WE STAND FOR</strong></div>
 We are a one-stop webshop offering the widest variety of authentic and trendy ethnic fashion. Our online platform offers it all -
  sarees, salwar kameez, lehengas, contemporary Indo Westerns with an exquisite collection of accessories.
 
@@ -27,8 +27,9 @@ We are a one-stop webshop offering the widest variety of authentic and trendy et
 
 
 
-<div>OUR MISSION</div>
-To provide our customers a truly international online shopping experience, we guarantee superior quality and craftsmanship through our range, supported by swift and secure processes right from purchase to product delivery and beyond.
+<div><strong>OUR MISSION</strong></div>
+To provide our customers a truly international online shopping experience, we guarantee superior quality and craftsmanship 
+through our range, supported by swift and secure processes right from purchase to product delivery and beyond.
 
 
 
@@ -36,8 +37,9 @@ To provide our customers a truly international online shopping experience, we gu
 
 
 
-<div>OUR VISION</div>
-We envisage ourselves as the best online shopping experience for customers worldwide, providing rich Indian artistry through truly international fashion statements. The aim is to source the best of Indian Ethnic Fashion and spread its magic.</strong></pre>
+<div><strong>OUR VISION</strong></div>
+We envisage ourselves as the best online shopping experience for customers worldwide, providing rich Indian artistry through truly
+ international fashion statements. The aim is to source the best of Indian Ethnic Fashion and spread its magic.</strong></pre>
 <jsp:include page="./shared/Footer.jsp"/>
 </body>
 </html>
